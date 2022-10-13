@@ -1,0 +1,43 @@
+@import "src/styles/vars"
+
+.wrapper
+  display: flex
+  align-items: center
+  min-width: $size-m * 20
+  justify-content: space-between
+  margin-bottom: $size-xs
+
+
+.labelContainer
+  background: white
+  padding: $size-m
+  border-radius: 4px
+  display: flex
+  align-items: center
+  font-weight: 500
+  width: 80%
+
+input[class="inputCheck"] + label
+  display: inline-block
+  width: $size-l
+  height: $size-l
+  border: 2px solid $gray-darkness
+  border-radius: 2px
+  cursor: pointer
+  margin-right: $size-xs
+
+input[class="inputCheck"]
+  display: none
+
+input[class="inputCheck"]:checked + label:after
+  position: relative
+  top: -1px
+  left: 3px
+  content: '\2714'
+  font-size: $size-m
+
+.deleteContainer
+  font-size: $size-m * 2
+  color: red
+  cursor: pointer
+

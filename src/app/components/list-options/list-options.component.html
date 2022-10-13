@@ -1,0 +1,9 @@
+<div>
+  <div class="title titleList">
+    All
+  </div>
+  <div class="listContainer">
+    <app-option-card (handleCheck)="onChangeCheck($event)" [item]="option" *ngFor="let option of renderList" ></app-option-card>
+  </div>
+</div>
+

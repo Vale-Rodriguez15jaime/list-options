@@ -1,0 +1,8 @@
+<div class="wrapper">
+  <div class="labelContainer">
+    <input class="inputCheck" (change)="onChange(item.id)" type="checkbox" [id]="item.id" [value]="item.id" [checked]="inputCheck" [ngModel]="item.checked" [formControl]="inputCheck" />
+    <label [id]="item.id"></label>
+    <div>{{ item.label }}</div>
+  </div>
+  <div (click)="onChange(item.id, true)" class="deleteContainer">x</div>
+</div>

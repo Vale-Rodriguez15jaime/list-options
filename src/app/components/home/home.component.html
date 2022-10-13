@@ -1,0 +1,12 @@
+<app-header></app-header>
+<div class="wrapper">
+  <div class="selectWrapper">
+    <div class="title titleSelect">To do List</div>
+    <app-select [list]="this.listSelected || []"></app-select>
+    <div class="inputContainer">
+      <input [(ngModel)]="textInput" placeholder="Placeholder" type="text" class="inputAdd" id="valueInput" [formControl]="valueInput">
+      <div (click)="addNewOption()" class="addLabel">+</div>
+    </div>
+  </div>
+  <app-list-options (updateList)="handleChangeList($event)" [list]="this.listOptions"></app-list-options>
+</div>
