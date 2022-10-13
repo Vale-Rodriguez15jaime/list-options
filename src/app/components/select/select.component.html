@@ -1,0 +1,7 @@
+<div class="column-6 form-select">
+  <select class="column-6 form-select"  name="" id="">
+    <option value="" disabled="disabled" selected="selected">All</option>
+
+    <option [ngModel]="option.id" *ngFor="let option of newList" >{{ option.label }}</option>
+  </select>
+</div>

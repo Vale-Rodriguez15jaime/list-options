@@ -1,0 +1,74 @@
+@import "src/styles/vars"
+
+.form-select
+  background: white
+  overflow: hidden
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.1), inset 0 0 10px rgba(0, 0, 0, 0.07)
+  border: 1px solid $gray-darkness
+  border-radius: 5px
+
+  &:focus,
+  &:hover
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2)
+
+  &:after
+    content: '▾'
+    color: $green-secondary
+    position: absolute
+    transform: translate(-50%, 40%)
+    right: 0
+    z-index: 1111
+    line-height: 40px
+    font-size: 1.5rem
+    top: 0
+    width: 20px
+    height: 20px
+
+
+select
+  position: relative
+  background: transparent
+  background-image: none
+  display: block
+  outline: none
+  color: $green-secondary
+  font-weight: 700
+  font-size: $size-m
+  cursor: pointer
+  z-index: 2
+  border: none
+  padding: $size-m 10px $size-m 5px
+  text-overflow: ''
+  text-indent: 5px
+  width: 21rem
+  appearance: none
+  -webkit-appearance: none
+  -moz-appearance: none
+
+  &[multiple=multiple]
+    height: auto
+    border: 1px solid #cbcbcb
+    border-radius: 3px
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.1), inset 0 0 10px rgba(0, 0, 0, 0.07)
+
+    &:hover
+      border-color: #cccccc
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2)
+
+
+  option[disabled]
+    color: $green-secondary
+    text-shadow: none
+    border: none
+
+select:-moz-focusring
+  color: transparent
+  text-shadow: 0 0 0 #888888
+
+select::-ms-expand
+  display: none
+
+.column-6
+  position: relative
+  min-width: $size-m * 21
+  width: 100%

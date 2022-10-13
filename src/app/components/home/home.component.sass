@@ -1,0 +1,39 @@
+@import "src/styles/vars"
+
+.wrapper
+  padding: $size-m * 2
+
+.selectWrapper
+  display: flex
+  flex-direction: column
+
+.titleSelect
+  margin-bottom: $size-m * 1.5
+
+.inputAdd
+  padding: $size-m
+  border: 1px solid $gray-darkness
+  border-radius: 5px
+  margin: $size-xs 0 $size-m 0
+  font-size: $size-m
+  color: $green-secondary
+  font-weight: 600
+  min-width: $size-m * 19
+  width: 100%
+
+.inputAdd::placeholder
+  color: $gray-darkness
+
+.inputContainer
+  position: relative
+  display: flex
+
+.addLabel
+  position: absolute
+  right: 0
+  top: 0
+  font-weight: 600
+  font-size: $size-m * 2
+  transform: translate(-60%, 40%)
+  cursor: pointer
+
