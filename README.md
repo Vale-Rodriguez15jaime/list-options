@@ -1,6 +1,8 @@
 # List dynamic project
 
-This is a project show of list in select, and add items and delete items of list
+https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
+
+This is a project show of list in select , and add items and delete items of list
 
 ## Getting Started
 
